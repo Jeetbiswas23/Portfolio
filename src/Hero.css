@@ -1,12 +1,51 @@
+/* ========== HERO SECTION ========== */
 .hero-container {
-    min-height: 100vh; /* full screen */
-    background: linear-gradient(to bottom, #6b21a8, #5b21b6, #312e81);
-    color: white;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 80px; /* leaves space for fixed navbar */
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    overflow: hidden;
+    color: white;
+  
+    /* luxurious dark gradient with multiple deep tones */
+    background: linear-gradient(-45deg,
+      #0a0a0f,
+      #111026,
+      #1b1b2b,
+      #222138,
+      #2c2c3d,
+      #1b1b2b,
+      #111026,
+      #0a0a0f
+    );
+    background-size: 400% 400%; /* for smooth animation */
+  
+    /* slow, smooth cinematic movement */
+    animation: gradientFlow 50s ease infinite;
   }
   
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    25% {
+      background-position: 50% 100%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    75% {
+      background-position: 50% 0%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  /* Hero Content */
   .hero-content {
     flex: 1;
     display: flex;
@@ -14,32 +53,39 @@
   }
   
   .hero-text {
-    padding-left: 6rem; /* shifted text more to the right */
+    padding-left: 6rem;
   }
   
   .hero-text h1 {
-    font-size: 5.5rem; /* larger heading */
+    font-size: 5.5rem;
     font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #d1c4e9, #b39ddb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* gradient text */
   }
   
   .hero-text p {
-    font-size: 2rem; /* bigger paragraph text */
+    font-size: 2rem;
     color: #e0e0e0;
     margin-top: 1rem;
     line-height: 1.6;
   }
   
+  /* Hero Image */
   .hero-image {
-    margin-left: 4rem; /* push image more to the right */
+    margin-left: 4rem;
   }
   
   .hero-image img {
-    width: 280px; /* slightly bigger photo */
+    width: 280px;
     height: 280px;
     object-fit: cover;
     border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(147, 51, 234, 0.6); /* glowing border */
   }
   
+  /* ========== SCROLL DOWN ICON ========== */
   .scroll-down .scroll-link {
     text-decoration: none;
     color: #fff;
@@ -58,37 +104,37 @@
     50% { transform: translateY(8px); }
   }
   
-  /* Navbar Customization */
+  /* ========== NAVBAR ========== */
   .custom-navbar {
-    position: fixed;       /* fixed at top always */
+    position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1030;
-    background: transparent !important; /* fully transparent background */
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin: 0;
-    box-shadow: none; /* remove shadow */
+    background: transparent;
+    padding: 0.5rem 0;
   }
   
   .custom-brand {
     margin-left: 2rem;
     font-size: 1.2rem;
     color: white !important;
-    display: flex;
-    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
   }
   
   .custom-nav {
     margin-right: 2rem;
-    gap: 2rem; /* spacing between nav items */
+    gap: 1.5rem;
   }
   
   .custom-nav .nav-link {
     color: #e0e0e0 !important;
-    font-size: 1.3rem;   /* bigger links */
-    font-weight: 600;    /* semi-bold */
+    font-size: 1.3rem;
+    font-weight: 600;
     transition: color 0.3s ease;
   }
   
@@ -96,19 +142,12 @@
     color: #fff !important;
   }
   
-  /* Logo */
-  .navbar-logo {
-    width: 110px;   /* bigger so logo name is visible */
-    height: 110px;
-    object-fit: contain;
-  }
-  
-  /* Dynamic Text */
+  /* ========== DYNAMIC TEXT ========== */
   #dynamic-text {
-    font-size: 1.8rem;  
+    font-size: 1.8rem;
     font-weight: 600;
     margin-left: 0.8rem;
-    line-height: 90px;  /* aligns with logo */
+    line-height: 90px;
   }
   
   .dynamic-text {

@@ -1,0 +1,128 @@
+.hero-container {
+    min-height: 100vh; /* full screen */
+    background: linear-gradient(to bottom, #6b21a8, #5b21b6, #312e81);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px; /* leaves space for fixed navbar */
+  }
+  
+  .hero-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-text {
+    padding-left: 6rem; /* shifted text more to the right */
+  }
+  
+  .hero-text h1 {
+    font-size: 5.5rem; /* larger heading */
+    font-weight: bold;
+  }
+  
+  .hero-text p {
+    font-size: 2rem; /* bigger paragraph text */
+    color: #e0e0e0;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-image {
+    margin-left: 4rem; /* push image more to the right */
+  }
+  
+  .hero-image img {
+    width: 280px; /* slightly bigger photo */
+    height: 280px;
+    object-fit: cover;
+    border: 5px solid #fff;
+  }
+  
+  .scroll-down .scroll-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .scroll-down i {
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 5px;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+  
+  /* Navbar Customization */
+  .custom-navbar {
+    position: fixed;       /* fixed at top always */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background: transparent !important; /* fully transparent background */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin: 0;
+    box-shadow: none; /* remove shadow */
+  }
+  
+  .custom-brand {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: white !important;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-nav {
+    margin-right: 2rem;
+    gap: 2rem; /* spacing between nav items */
+  }
+  
+  .custom-nav .nav-link {
+    color: #e0e0e0 !important;
+    font-size: 1.3rem;   /* bigger links */
+    font-weight: 600;    /* semi-bold */
+    transition: color 0.3s ease;
+  }
+  
+  .custom-nav .nav-link:hover {
+    color: #fff !important;
+  }
+  
+  /* Logo */
+  .navbar-logo {
+    width: 110px;   /* bigger so logo name is visible */
+    height: 110px;
+    object-fit: contain;
+  }
+  
+  /* Dynamic Text */
+  #dynamic-text {
+    font-size: 1.8rem;  
+    font-weight: 600;
+    margin-left: 0.8rem;
+    line-height: 90px;  /* aligns with logo */
+  }
+  
+  .dynamic-text {
+    animation: fadeInOut 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

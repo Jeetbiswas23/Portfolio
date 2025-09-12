@@ -1,0 +1,60 @@
+.hero-container {
+  min-height: 100vh; /* Full screen height */
+  width: 100%;       /* Full screen width */
+  background: linear-gradient(to bottom, #6b21a8, #5b21b6, #312e81);
+  color: white;
+  padding-top: 70px; /* space for fixed navbar */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.scroll-down .scroll-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.scroll-down i {
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 5px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.navbar-logo {
+  width: 50px;   /* bigger logo */
+  height: 50px;
+  object-fit: contain;
+}
+
+#dynamic-text {
+  font-size: 1.5rem;  /* ~24px */
+  font-weight: 700;   /* make text bolder to match logo's visual weight */
+  line-height: 50px;  /* aligns text with logo */
+}

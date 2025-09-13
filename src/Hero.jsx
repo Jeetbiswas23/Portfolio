@@ -13,6 +13,8 @@ const Hero = () => {
     setShowMoreMessage(true);
   };
 
+
+  
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {

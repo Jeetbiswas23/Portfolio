@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Hero.css";
 import myPhoto from "./assets/jeet.jpeg";
 import logo from "./assets/logo.png";
-import trevguide from "./assets/trevguide.png";
 import promptverse from "./assets/promptverse.png";
 import fastvoicer from "./assets/fastvoicer.png";
+import trevGuide from "./assets/trevGuide.png";
 
 const Hero = () => {
   const [dynamicText, setDynamicText] = useState("| Web Developer");
@@ -25,7 +25,6 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Optional: fade-in animation for Overview when in view
   useEffect(() => {
     const overview = document.querySelector("#overview");
     const observer = new IntersectionObserver(
@@ -65,8 +64,8 @@ const Hero = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto custom-nav">
                 <li className="nav-item">
-                  <a 
-                    className="nav-link" 
+                  <a
+                    className="nav-link"
                     href="#overview"
                     onClick={(e) => {
                       e.preventDefault();
@@ -108,7 +107,7 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <div className="scroll-down text-center mb-3">
-          <a 
+          <a
             href="#overview"
             className="scroll-link"
             onClick={(e) => {
@@ -133,88 +132,67 @@ const Hero = () => {
             <br /><br />
             Over time, I have led multiple projects, honing my teamwork and leadership skills—organizing tasks, coordinating with teammates, and ensuring smooth execution. My key strengths—self-belief, resilience, and a never-give-up attitude—push me to take on challenges and consistently deliver results.
           </p>
-              </div>
-              
-              
-              <div className="overview-cards d-flex flex-wrap justify-content-around mt-5">
-
-</div>
-
+        </div>
       </section>
 
       {/* PROJECTS SECTION */}
-<section id="projects" className="projects-section d-flex flex-column justify-content-center">
-  <div className="projects-container mb-4"> {/* Added mb-4 class */}
-    <h4 className="projects-small-heading">
-      🏎️ From the Starting Grid to the Chequered Flag.
-    </h4>
-    <h1 className="projects-main-heading">Projects.</h1>
-    <p className="projects-subtitle">
-      Fasten your seat belts and get ready for a high-speed tour through my coding circuits. 
-      This is where the rubber meets the road, and each repository is a thrilling lap of ingenuity. 
-      From the starting grid of initial commits to the checkered flag of final deployments, here you will find 
-      the engineering behind my race for excellence. <br /><br />
-      Fuel up on my GitHub repositories, where you can take a pit stop at the code that fuels my journey. 
-      Whether it’s a sprint race of a quick weekend project or a full-send endurance of a long-term development, 
-      every repo is a story of challenges tackled at high speeds. 🛠️ <br /><br />
-      Now, switch to mode push and send it into the main straight of projects!
-    </p>
-  </div>
+      <section id="projects" className="projects-section d-flex flex-column justify-content-center">
+        <div className="projects-container mb-4">
+          <h4 className="projects-small-heading">🏎️ From the Starting Grid to the Chequered Flag.</h4>
+          <h1 className="projects-main-heading">Projects.</h1>
+          <p className="projects-subtitle">
+            Fasten your seat belts and get ready for a high-speed tour through my coding circuits. This is where the rubber meets the road, and each repository is a thrilling lap of ingenuity.
+          </p>
+        </div>
 
-  <div className="projects-cards d-flex flex-wrap justify-content-around">
-  {/* Project 1 */}
-  <div className="project-card">
-    <img src={promptverse} alt="PromptVerse" className="project-image" />
-    <h3 className="project-title">PromptVerse</h3>
-    <p className="project-desc">
-      A prompt marketplace to explore and optimize prompts.
-    </p>
-    <div className="project-buttons">
-      <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-      <a href="https://github.com/Jeetbiswas23/PromptVerse-FINAL-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-    </div>
-  </div>
+        <div className="projects-cards d-flex flex-wrap justify-content-around">
+          {/* Project 1 */}
+          <div className="project-card">
+            <img src={promptverse} alt="PromptVerse" className="project-image" />
+            <h3 className="project-title">PromptVerse</h3>
+            <p className="project-desc">A prompt marketplace to explore and optimize prompts.</p>
+            <div className="project-buttons">
+              <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+              <a href="https://github.com/Jeetbiswas23/PromptVerse-FINAL-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+            </div>
+          </div>
 
-  {/* Project 2 */}
-  <div className="project-card">
-    <img src={trevguide} alt="TrevGuide" className="project-image" />
-    <h3 className="project-title">TrevGuide</h3>
-    <p className="project-desc">
-      A travel website where you can learn the basics of travel with blogs.
-    </p>
-    <div className="project-buttons">
-      <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-      <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-    </div>
-  </div>
-
-  {/* Project 3 */}
-  <div className="project-card">
-    <img src={fastvoicer} alt="FastVoicer" className="project-image" />
-    <h3 className="project-title">FastVoicer</h3>
-    <p className="project-desc">
-      An invoice creator where you can create invoices to send payments through blockchain.
-    </p>
-    <div className="project-buttons">
-      <a href="https://fast-voicer.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-      <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-    </div>
+          {/* Project 2 */}
+          <div className="project-card">
+  <img src={trevGuide} alt="TrevGuide" className="project-image" />
+  <h3 className="project-title">TrevGuide</h3>
+  <p className="project-desc">A travel website where you can learn the basics of travel with blogs.</p>
+  <div className="project-buttons">
+    <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+    <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
   </div>
 </div>
 
-{/* Show More Button */}
-<div className="text-center mt-4">
-  {!showMoreMessage ? (
-    <button className="btn btn-visit" onClick={handleShowMore}>
-      Show More
-    </button>
-  ) : (
-    <p className="mt-3" style={{ color: "#c084fc", fontWeight: "600" }}>
-      🚀 More projects are coming soon. Stay tuned!
-    </p>
-  )}
-</div>
-</section>
+          {/* Project 3 */}
+          <div className="project-card">
+            <img src={fastvoicer} alt="FastVoicer" className="project-image" />
+            <h3 className="project-title">FastVoicer</h3>
+            <p className="project-desc">An invoice creator where you can create invoices to send payments through blockchain.</p>
+            <div className="project-buttons">
+              <a href="https://fast-voicer.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+              <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Show More Button */}
+        <div className="text-center mt-4">
+          {!showMoreMessage ? (
+            <button className="btn btn-visit" onClick={handleShowMore}>
+              Show More
+            </button>
+          ) : (
+            <p className="mt-3" style={{ color: "#c084fc", fontWeight: "600" }}>
+              🚀 More projects are coming soon. Stay tuned!
+            </p>
+          )}
+        </div>
+      </section>
     </>
   );
 };

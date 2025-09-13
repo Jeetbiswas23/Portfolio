@@ -133,6 +133,31 @@ const Hero = () => {
 </div>
 
       </section>
+
+      {/* PROJECTS SECTION */}
+<section id="projects" className="projects-section d-flex flex-column justify-content-center">
+  <div className="projects-container">
+    <h4 className="projects-small-heading">
+      🏎️ From the Starting Grid to the Chequered Flag.
+    </h4>
+    <h1 className="projects-main-heading">Projects.</h1>
+    <p className="projects-subtitle">
+      Fasten your seat belts and get ready for a high-speed tour through my coding circuits. 
+      This is where the rubber meets the road, and each repository is a thrilling lap of ingenuity. 
+      From the starting grid of initial commits to the checkered flag of final deployments, here you will find 
+      the engineering behind my race for excellence. <br /><br />
+      Fuel up on my GitHub repositories, where you can take a pit stop at the code that fuels my journey. 
+      Whether it’s a sprint race of a quick weekend project or a full-send endurance of a long-term development, 
+      every repo is a story of challenges tackled at high speeds. 🛠️ <br /><br />
+      Now, switch to mode push and send it into the main straight of projects!
+    </p>
+  </div>
+
+  <div className="projects-cards d-flex flex-wrap justify-content-around mt-5">
+    {/* Project cards or GitHub repo previews can go here */}
+  </div>
+</section>
+
     </>
   );
 };

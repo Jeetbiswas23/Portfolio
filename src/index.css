@@ -1,285 +1,140 @@
-.hero-container {
-  min-height: 100vh; /* Full screen height */
-  width: 100%;       /* Full screen width */
-  background: linear-gradient(to bottom, #6b21a8, #5b21b6, #312e81);
-  color: white;
-  padding-top: 70px; /* space for fixed navbar */
-  display: flex;
-  flex-direction: column;
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hero-content {
-  flex: 1;
-  padding: 2rem;
+body {
+  font-family: "Poppins", sans-serif;
+  color: #dcdcdc;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2c2c 100%);
+  background-attachment: fixed; /* keeps it continuous */
+  background-size: cover;
+  background-repeat: no-repeat;
+  line-height: 1.5;
 }
 
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-.hero-text p {
-  font-size: 1.25rem;
-  color: #e0e0e0;
-}
-
-.hero-image img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-}
-
-.scroll-down .scroll-link {
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-}
-
-.scroll-down i {
-  font-size: 1.5rem;
-  display: block;
-  margin-top: 5px;
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
-
-.navbar-logo {
-  width: 50px;   /* bigger logo */
-  height: 50px;
-  object-fit: contain;
-}
-
-#dynamic-text {
-  font-size: 1.5rem;  /* ~24px */
-  font-weight: 700;   /* make text bolder to match logo's visual weight */
-  line-height: 50px;  /* aligns text with logo */
-}
-
-/* ========== THICK CINEMATIC SCROLL TRACK & ORB ========== */
-.scroll-track {
-  width: 10px; /* thicker track */
-  height: 75px; /* slightly taller for proper screen balance */
-  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.2), rgba(255,255,255,0.05));
-  margin: 0 auto;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 12px rgba(255,255,255,0.1);
-  animation: trackGlow 3s infinite ease-in-out;
-}
-
-@keyframes trackGlow {
-  0%, 100% { box-shadow: 0 0 10px rgba(192,132,252,0.25), 0 0 20px rgba(147,51,234,0.2); }
-  50% { box-shadow: 0 0 25px rgba(192,132,252,0.35), 0 0 40px rgba(147,51,234,0.25); }
-}
-
-.scroll-orb {
-  width: 18px; 
-  height: 18px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #c084fc, #9333ea, #7e22ce); /* orb gradient */
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: orbMove 2.8s infinite ease-in-out, orbPulse 2.8s infinite ease-in-out;
-
-  /* enhanced neon trail layers */
-  box-shadow: 
-    0 0 12px #c084fc, 
-    0 0 25px #9333ea, 
-    0 0 40px #7e22ce, 
-    0 5px 25px #c084fc55, 
-    0 10px 35px #9333ea40, 
-    0 15px 50px #7e22ce30;
-}
-
-/* Orb vertical movement — smooth, subtle */
-@keyframes orbMove {
-  0%, 100% { top: 8px; }  
-  50% { top: 55px; }
-}
-
-/* Glowing pulse — orb slightly grows and fades */
-@keyframes orbPulse {
-  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.85; }
-  50% { transform: translateX(-50%) scale(1.4); opacity: 1; }
-}
-
-
-/* ========== OVERVIEW SECTION ========== */
-.overview-section {
+/* ===== SECTIONS (transparent to let bg flow) ===== */
+.overview-section,
+.projects-section {
   min-height: 100vh;
   width: 100%;
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2c2c 100%);
-  color: #dcdcdc;
   padding: 6rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-blend-mode: overlay;
+  background: transparent; /* no gradient reset */
 }
 
-
-/* Container for left-aligned content */
-.overview-container {
+.overview-container,
+.projects-container {
   max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-/* Small heading / tagline above main heading */
+/* ===== OVERVIEW TEXT ===== */
 .overview-small-heading {
   font-size: 1.5rem;
   font-weight: 500;
-  color: #c084fc; /* neon purple pop */
+  color: #c084fc;
   margin-bottom: 1rem;
 }
 
-/* Main Heading "Overview." */
 .overview-main-heading {
-  font-size: 5rem; /* huge and bold */
+  font-size: 5rem;
   font-weight: 900;
   color: #ffffff;
-  text-align: left;
-  margin: 0 0 1.5rem 0;
+  margin-bottom: 1.5rem;
   line-height: 1.1;
+  text-align: left;
 }
 
-/* Description text under main heading */
 .overview-subtitle {
   font-size: 1.25rem;
-  color: #a0a0a0; /* soft grey */
+  color: #a0a0a0;
   line-height: 1.8;
 }
 
-html {
-  scroll-behavior: smooth; /* native smooth scrolling fallback */
-}
-
-/* OVERVIEW CARDS CONTAINER */
-.overview-cards {
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Wrapper for label */
-.flip-card-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 220px; /* card width */
-  position: relative;
-}
-
-/* "Flip to know" label */
-.flip-label {
-  font-size: 0.9rem;
-  color: #a78bfa; /* subtle neon purple */
+/* ===== PROJECTS TEXT ===== */
+.projects-small-heading {
+  font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+  color: #c084fc;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-/* Flip Card Base */
-.flip-card {
-  width: 220px;
-  height: 150px;
-  perspective: 1200px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-/* Inner wrapper */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s cubic-bezier(0.4,0.2,0.2,1);
-  transform-style: preserve-3d;
-}
-
-/* Flip on hover */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Front & Back */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  font-family: 'Poppins', sans-serif;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
-  transition: all 0.5s ease-in-out;
-}
-
-/* Front */
-.flip-card-front {
-  background: linear-gradient(145deg, #111111, #1f1f1f); /* dark royal gradient */
+.projects-main-heading {
+  font-size: 4.5rem;
+  font-weight: 900;
   color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border: 2px solid #a78bfa; /* subtle neon border */
+  margin-bottom: 2rem;
+  text-align: left;
 }
 
-/* Back */
-.flip-card-back {
-  background: linear-gradient(145deg, #ffffff10, #ffffff20); /* subtle white-glass effect */
-  color: #f0f0f0;
-  transform: rotateY(180deg);
-  font-size: 0.95rem;
-  line-height: 1.6;
-  border: 2px solid #a78bfa;
-  backdrop-filter: blur(4px); /* glass effect */
+.projects-subtitle {
+  font-size: 1.25rem;
+  color: #cfcfcf;
+  line-height: 1.8;
+  text-align: left;
 }
 
-/* Hover effects for glow */
-.flip-card:hover .flip-card-front {
-  box-shadow: 0 15px 35px rgba(167,139,250,0.5), 0 0 25px rgba(167,139,250,0.3);
+/* ===== PROJECTS CARDS ===== */
+.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
 }
 
-.flip-card:hover .flip-card-back {
-  box-shadow: 0 15px 35px rgba(167,139,250,0.4), 0 0 20px rgba(167,139,250,0.25);
+.project-card {
+  background: rgba(255, 255, 255, 0.05); /* subtle glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Responsive */
-@media(max-width: 900px){
-  .overview-cards {
-    gap: 1.5rem;
-    justify-content: center;
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+@media(max-width: 900px) {
+  .overview-section,
+  .projects-section {
+    padding: 4rem 2rem;
+  }
+
+  .overview-main-heading,
+  .projects-main-heading {
+    font-size: 3rem;
+  }
+
+  .overview-subtitle,
+  .projects-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    width: 100%;
   }
 }
 
-/* Make scroll beyond edges black instead of white */
-html, body {
-  background-color: #0d0d0d; /* dark black background */
-  color: #fff;
-  overscroll-behavior-y: contain; /* prevent default overscroll glow on some browsers */
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
-  margin: 0;
-  padding: 0;
-}
+@media(max-width: 600px) {
+  .overview-main-heading,
+  .projects-main-heading {
+    font-size: 2.5rem;
+  }
 
-/* Optional: if using body scroll inside a container */
-body {
-  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a); /* matches hero/overview */
-}
-
-/* On iOS Safari / macOS, prevent white bounce */
-body, html {
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none; 
+  .overview-small-heading,
+  .projects-small-heading {
+    font-size: 1.2rem;
+  }
 }

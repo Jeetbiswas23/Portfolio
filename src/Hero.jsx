@@ -10,6 +10,11 @@ import fastvoicer from "./assets/fastvoicer.png";
 const Hero = () => {
   const [dynamicText, setDynamicText] = useState("| Web Developer");
   const roles = ["| Web Developer", "| Java Developer", "| Software Engineer", "| Director", "| Musician"];
+  const [showMoreMessage, setShowMoreMessage] = useState(false);
+
+  const handleShowMore = () => {
+    setShowMoreMessage(true);
+  };
 
   useEffect(() => {
     let index = 0;
@@ -195,6 +200,19 @@ const Hero = () => {
       <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
     </div>
   </div>
+</div>
+
+{/* Show More Button */}
+<div className="text-center mt-4">
+  {!showMoreMessage ? (
+    <button className="btn btn-visit" onClick={handleShowMore}>
+      Show More
+    </button>
+  ) : (
+    <p className="mt-3" style={{ color: "#c084fc", fontWeight: "600" }}>
+      🚀 More projects are coming soon. Stay tuned!
+    </p>
+  )}
 </div>
 </section>
     </>

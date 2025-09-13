@@ -220,7 +220,7 @@ body {
 
 .btn-visit {
   background: #9333ea; /* purple accent */
-  color: white;
+  color: white; /* Ensure text is white */
 }
 
 .btn-visit:hover {

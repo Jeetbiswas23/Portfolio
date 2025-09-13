@@ -1,12 +1,33 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a developer. Feel free to explore and reach out if you'd like to collaborate.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [About Me](#about-me)
+- [Projects](#projects)
+- [Skills](#skills)
+- [Contact](#contact)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About Me
+Hi, I'm Jeet Biswas! I'm a passionate developer with a focus on creating impactful and innovative solutions. I enjoy learning new technologies and applying them to solve real-world problems.
 
-## Expanding the ESLint configuration
+## Projects
+Here are some of the projects I've worked on:
+- **[Project Name](#)**: Brief description of the project.
+- **[Project Name](#)**: Brief description of the project.
+- **[Project Name](#)**: Brief description of the project.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check out the [Projects](#) folder for more details.
+
+## Skills
+- Programming Languages: [e.g., JavaScript, Python, etc.]
+- Frameworks & Libraries: [e.g., React, Node.js, etc.]
+- Tools & Platforms: [e.g., Git, Docker, etc.]
+
+## Contact
+Feel free to connect with me:
+- Email: [your-email@example.com](mailto:your-email@example.com)
+- LinkedIn: [Your LinkedIn Profile](#)
+- Portfolio Website: [Your Website](#)
+
+Thank you for visiting my portfolio!

@@ -164,4 +164,14 @@
       transform: translateY(0);
     }
   }
-  
+
+  /* ========== PROJECTS SECTION ========== */
+  .projects-container {
+    /* Add margin-bottom for spacing */
+    margin-bottom: 2rem;
+  }
+
+  .projects-cards {
+    /* Remove extra top margin */
+    margin-top: 0;
+  }

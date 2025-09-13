@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Hero.css";
 import myPhoto from "./assets/jeet.jpeg";
 import logo from "./assets/logo.png";
+import trevguide from "./assets/trevguide.png";
+import promptverse from "./assets/promptverse.png";
+import fastvoicer from "./assets/fastvoicer.png";
 
 const Hero = () => {
   const [dynamicText, setDynamicText] = useState("| Web Developer");
@@ -136,7 +139,7 @@ const Hero = () => {
 
       {/* PROJECTS SECTION */}
 <section id="projects" className="projects-section d-flex flex-column justify-content-center">
-  <div className="projects-container">
+  <div className="projects-container mb-4"> {/* Added mb-4 class */}
     <h4 className="projects-small-heading">
       🏎️ From the Starting Grid to the Chequered Flag.
     </h4>
@@ -153,11 +156,45 @@ const Hero = () => {
     </p>
   </div>
 
-  <div className="projects-cards d-flex flex-wrap justify-content-around mt-5">
-    {/* Project cards or GitHub repo previews can go here */}
+  <div className="projects-cards d-flex flex-wrap justify-content-around"> {/* Removed mt-5 */}
+    {/* Project cards */}
+    <div className="project-card">
+      <img src={promptverse} alt="PromptVerse" className="project-image" />
+      <h3 className="project-title">PromptVerse</h3>
+      <p className="project-desc">
+        A modern responsive web application designed to showcase interactive UI and backend integration.
+      </p>
+      <div className="project-buttons">
+        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+      </div>
+    </div>
+
+    <div className="project-card">
+      <img src={trevguide} alt="TrevGuide" className="project-image" />
+      <h3 className="project-title">TrevGuide</h3>
+      <p className="project-desc">
+        An AI-powered solution that automates workflows and delivers smart recommendations in real time.
+      </p>
+      <div className="project-buttons">
+        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+      </div>
+    </div>
+
+    <div className="project-card">
+      <img src={fastvoicer} alt="FastVoicer" className="project-image" />
+      <h3 className="project-title">FastVoicer</h3>
+      <p className="project-desc">
+        A scalable cloud-based project built with MERN stack, optimized for performance and security.
+      </p>
+      <div className="project-buttons">
+        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+      </div>
+    </div>
   </div>
 </section>
-
     </>
   );
 };

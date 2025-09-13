@@ -81,7 +81,7 @@ const Hero = () => {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href="https://drive.google.com/file/d/1OIy_A-WEyLlhkoRcU3r0eQgmcj7pV0We/view"
+                    href="https://drive.google.com/file/d/1OIy_A-WEyLlhkoRcU3r0eQgmcj7pV0We/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

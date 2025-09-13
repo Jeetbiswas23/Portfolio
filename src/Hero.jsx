@@ -130,58 +130,6 @@ const Hero = () => {
               
               <div className="overview-cards d-flex flex-wrap justify-content-around mt-5">
 
-{/* Card 1 - Web Development */}
-<div className="flip-card-wrapper">
-  <span className="flip-label">Flip to know</span>
-  <div className="flip-card">
-    <div className="flip-card-inner">
-      <div className="flip-card-front">
-        <h3>Web Development</h3>
-      </div>
-      <div className="flip-card-back">
-        <p>
-          I create interactive and responsive websites with React, HTML, CSS, and JS.  
-          
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Card 2 - Java Development */}
-<div className="flip-card-wrapper">
-  <span className="flip-label">Flip to know</span>
-  <div className="flip-card">
-    <div className="flip-card-inner">
-      <div className="flip-card-front">
-        <h3>Java Development</h3>
-      </div>
-      <div className="flip-card-back">
-        <p>
-          Building efficient Java applications with strong OOP and problem-solving skills.  
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-{/* Card 3 - DSA */}
-<div className="flip-card-wrapper">
-  <span className="flip-label">Flip to know</span>
-  <div className="flip-card">
-    <div className="flip-card-inner">
-      <div className="flip-card-front">
-        <h3>DSA</h3>
-      </div>
-      <div className="flip-card-back">
-        <p>
-          Strong foundation in Data Structures & Algorithms, solving complex problems efficiently.  
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
 </div>
 
       </section>

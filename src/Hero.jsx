@@ -3,10 +3,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Hero.css";
 import myPhoto from "./assets/jeet.jpeg";
 import logo from "./assets/logo.png";
-// Ensure this file exists
-import promptVerse from "./assets/promptVerse.png";
-import fastvoicer from "./assets/fastvoicer.png";
-import trevGuide from "./assets/trevGuide.png";
 
 const Hero = () => {
   const [dynamicText, setDynamicText] = useState("| Web Developer");
@@ -147,39 +143,39 @@ const Hero = () => {
         </div>
 
         <div className="projects-cards d-flex flex-wrap justify-content-around">
-          {/* Project 1 */}
-          <div className="project-card">
-            <img src={promptVerse} alt="PromptVerse" className="project-image" />
-            <p className="project-desc">A prompt marketplace to explore and optimize prompts.</p>
-            <div className="project-buttons">
-              <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-              <a href="https://github.com/Jeetbiswas23/PromptVerse-FINAL-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-            </div>
-          </div>
-
-          {/* Project 2 */}
-          <div className="project-card">
-  <img src={trevGuide} alt="TrevGuide" className="project-image" />
-  <h3 className="project-title">TrevGuide</h3>
-  <p className="project-desc">A travel website where you can learn the basics of travel with blogs.</p>
-  <div className="project-buttons">
-    <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-    <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+  {/* Project 1 */}
+  <div className="project-card">
+    <img src={new URL('./assets/promptVerse.png', import.meta.url).href} alt="PromptVerse" className="project-image" />
+    <p className="project-desc">A prompt marketplace to explore and optimize prompts.</p>
+    <div className="project-buttons">
+      <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/PromptVerse-FINAL-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+    </div>
   </div>
-          </div>
-          
 
-          {/* Project 3 */}
-          <div className="project-card">
-            <img src={fastvoicer} alt="FastVoicer" className="project-image" />
-            <h3 className="project-title">FastVoicer</h3>
-            <p className="project-desc">An invoice creator where you can create invoices to send payments through blockchain.</p>
-            <div className="project-buttons">
-              <a href="https://fast-voicer.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-              <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-            </div>
-          </div>
-        </div>
+  {/* Project 2 */}
+  <div className="project-card">
+    <img src={new URL('./assets/trevGuide.png', import.meta.url).href} alt="TrevGuide" className="project-image" />
+    <h3 className="project-title">TrevGuide</h3>
+    <p className="project-desc">A travel website where you can learn the basics of travel with blogs.</p>
+    <div className="project-buttons">
+      <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+    </div>
+  </div>
+
+  {/* Project 3 */}
+  <div className="project-card">
+    <img src={new URL('./assets/fastvoicer.png', import.meta.url).href} alt="FastVoicer" className="project-image" />
+    <h3 className="project-title">FastVoicer</h3>
+    <p className="project-desc">An invoice creator where you can create invoices to send payments through blockchain.</p>
+    <div className="project-buttons">
+      <a href="https://fast-voicer.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+    </div>
+  </div>
+</div>
+
 
         {/* Show More Button */}
         <div className="text-center mt-4">

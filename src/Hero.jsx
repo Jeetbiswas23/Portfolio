@@ -4,7 +4,7 @@ import "./Hero.css";
 import myPhoto from "./assets/jeet.jpeg";
 import logo from "./assets/logo.png";
 // Ensure this file exists
-import promptverse from "./assets/promptverse.png"; 
+import promptVerse from "./assets/promptVerse.png";
 import fastvoicer from "./assets/fastvoicer.png";
 import trevGuide from "./assets/trevGuide.png";
 
@@ -149,7 +149,7 @@ const Hero = () => {
         <div className="projects-cards d-flex flex-wrap justify-content-around">
           {/* Project 1 */}
           <div className="project-card">
-            <img src={promptverse} alt="PromptVerse" className="project-image" />
+            <img src={promptVerse} alt="PromptVerse" className="project-image" />
             <p className="project-desc">A prompt marketplace to explore and optimize prompts.</p>
             <div className="project-buttons">
               <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>

@@ -202,6 +202,21 @@ const Hero = () => {
           )}
         </div>
       </section>
+      {/* Scroll Indicator */}
+<div className="scroll-down text-center mb-3">
+  <a
+    href="#overview"
+    className="scroll-link"
+    onClick={(e) => {
+      e.preventDefault();
+      document.querySelector("#overview").scrollIntoView({ behavior: "smooth" });
+    }}
+  >
+    <div className="scroll-track">
+      <div className="scroll-orb"></div>
+    </div>
+  </a>
+</div>
 
     </>
   );

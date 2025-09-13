@@ -78,7 +78,16 @@ const Hero = () => {
                 <li className="nav-item"><a className="nav-link" href="#projects">Projects</a></li>
                 <li className="nav-item"><a className="nav-link" href="#tech-stack">Tech Stack</a></li>
                 <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li>
-                <li className="nav-item"><a className="nav-link" href="#resume">Resume</a></li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="https://drive.google.com/file/d/1OIy_A-WEyLlhkoRcU3r0eQgmcj7pV0We/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -193,6 +202,7 @@ const Hero = () => {
           )}
         </div>
       </section>
+
     </>
   );
 };

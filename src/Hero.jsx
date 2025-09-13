@@ -156,44 +156,46 @@ const Hero = () => {
     </p>
   </div>
 
-  <div className="projects-cards d-flex flex-wrap justify-content-around"> {/* Removed mt-5 */}
-    {/* Project cards */}
-    <div className="project-card">
-      <img src={promptverse} alt="PromptVerse" className="project-image" />
-      <h3 className="project-title">PromptVerse</h3>
-      <p className="project-desc">
-        A modern responsive web application designed to showcase interactive UI and backend integration.
-      </p>
-      <div className="project-buttons">
-        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-      </div>
-    </div>
-
-    <div className="project-card">
-      <img src={trevguide} alt="TrevGuide" className="project-image" />
-      <h3 className="project-title">TrevGuide</h3>
-      <p className="project-desc">
-        An AI-powered solution that automates workflows and delivers smart recommendations in real time.
-      </p>
-      <div className="project-buttons">
-        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-      </div>
-    </div>
-
-    <div className="project-card">
-      <img src={fastvoicer} alt="FastVoicer" className="project-image" />
-      <h3 className="project-title">FastVoicer</h3>
-      <p className="project-desc">
-        A scalable cloud-based project built with MERN stack, optimized for performance and security.
-      </p>
-      <div className="project-buttons">
-        <a href="https://yourwebsite.com" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
-        <a href="https://github.com/yourrepo" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
-      </div>
+  <div className="projects-cards d-flex flex-wrap justify-content-around">
+  {/* Project 1 */}
+  <div className="project-card">
+    <img src={promptverse} alt="PromptVerse" className="project-image" />
+    <h3 className="project-title">PromptVerse</h3>
+    <p className="project-desc">
+      A prompt marketplace to explore and optimize prompts.
+    </p>
+    <div className="project-buttons">
+      <a href="https://prompt-verse-sandy.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/PromptVerse-FINAL-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
     </div>
   </div>
+
+  {/* Project 2 */}
+  <div className="project-card">
+    <img src={trevguide} alt="TrevGuide" className="project-image" />
+    <h3 className="project-title">TrevGuide</h3>
+    <p className="project-desc">
+      A travel website where you can learn the basics of travel with blogs.
+    </p>
+    <div className="project-buttons">
+      <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+    </div>
+  </div>
+
+  {/* Project 3 */}
+  <div className="project-card">
+    <img src={fastvoicer} alt="FastVoicer" className="project-image" />
+    <h3 className="project-title">FastVoicer</h3>
+    <p className="project-desc">
+      An invoice creator where you can create invoices to send payments through blockchain.
+    </p>
+    <div className="project-buttons">
+      <a href="https://fast-voicer.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
+      <a href="https://github.com/Jeetbiswas23/FastVoicer" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
+    </div>
+  </div>
+</div>
 </section>
     </>
   );

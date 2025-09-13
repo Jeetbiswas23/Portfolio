@@ -215,6 +215,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  color: white;
 }
 
 .btn-visit {

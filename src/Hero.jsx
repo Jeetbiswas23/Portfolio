@@ -166,7 +166,8 @@ const Hero = () => {
     <a href="https://trev-guide.vercel.app/" target="_blank" rel="noreferrer" className="btn btn-visit">Visit Website</a>
     <a href="https://github.com/Jeetbiswas23/TrevGuide-Starting-" target="_blank" rel="noreferrer" className="btn btn-code">View Code</a>
   </div>
-</div>
+          </div>
+          
 
           {/* Project 3 */}
           <div className="project-card">

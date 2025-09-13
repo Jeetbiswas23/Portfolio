@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./Hero.css";
 import myPhoto from "./assets/jeet.jpeg";
 import logo from "./assets/logo.png";
-import promptVerse from "./assets/promptVerse.png";
-import trevGuide from "./assets/trevGuide.png";
-import fastvoicer from "./assets/fastvoicer.png";
+import promptVerse from "./assets/PromptVerse.png";
+import trevGuide from "./assets/TrevGuide.png";
+import fastvoicer from "./assets/FastVoicer.png";
 
 const Hero = () => {
   const [dynamicText, setDynamicText] = useState("| Web Developer");

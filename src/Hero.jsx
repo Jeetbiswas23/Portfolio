@@ -41,6 +41,12 @@ const Hero = () => {
 
   return (
     <>
+      {/* Background Layer */}
+      <div className="background-layer"></div>
+      {/* Moving Stars Background */}
+      <div className="stars"></div>
+      <div className="stars stars2"></div>
+      <div className="stars stars3"></div>
       {/* HERO SECTION */}
       <div className="hero-container d-flex flex-column">
         {/* Navbar */}
@@ -151,7 +157,7 @@ const Hero = () => {
           <h1 className="projects-main-heading">Projects.</h1>
           <p className="projects-subtitle">
           Fasten your seat belts and get ready for a high-speed tour through my coding circuits. This is where the rubber meets the road, and each repository is a thrilling lap of ingenuity. From the starting grid of initial commits to the checkered flag of final deployments, here you will find the engineering behind my race for excellence. Fuel up on my GitHub repositories, where you can take a pit stop at the code that fuels my journey. Whether it’s a sprint race of a quick weekend project or a full-send endurance of a long-term development, every repo is a story of challenges tackled at high speeds. 🛠️ Now, switch to mode push and send it into the main straight of projects!
-          </p>
+          </p> {/* Properly closed <p> tag */}
         </div>
 
         <div className="projects-cards d-flex flex-wrap justify-content-around">

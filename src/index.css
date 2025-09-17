@@ -8,11 +8,22 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #dcdcdc;
+  background: transparent; /* Make the body background transparent */
+  line-height: 1.5;
+}
+
+/* Add a new background layer for the gradient */
+.background-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Place it below the stars */
   background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 40%, #2c2c2c 100%);
-  background-attachment: fixed; /* keeps it continuous */
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  line-height: 1.5;
 }
 
 /* ===== SECTIONS (transparent to let bg flow) ===== */
@@ -278,5 +289,43 @@ body {
   100% {
     top: 2.5rem;
     opacity: 0;
+  }
+}
+
+/* Moving Stars Background */
+.stars, .stars2, .stars3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: transparent;
+  pointer-events: none;
+}
+
+.stars {
+  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: move-stars 50s linear infinite;
+}
+
+.stars2 {
+  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: move-stars 100s linear infinite;
+  opacity: 0.6;
+}
+
+.stars3 {
+  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+  animation: move-stars 150s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes move-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
   }
 }
